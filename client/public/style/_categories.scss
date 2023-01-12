@@ -1,0 +1,81 @@
+.categories {
+    padding: 65px 0;
+    text-align: center;
+}
+
+.categories_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.categories_card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 360px;
+    height: 260px;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $grey-text;
+}
+
+.categories_card_woman {
+    background: url(../img/bg_for_woman.jpg) $top-multiply;
+    background-size: cover;
+
+    &:hover {
+        background: url(../img/bg_for_woman.jpg);
+        transition: 0.2s ease-out 0.1s;
+    }
+}
+
+.categories_card_men {
+    background: url(../img/bg_for_men.jpg) $top-multiply;
+    background-size: cover;
+
+    &:hover {
+        background: url(../img/bg_for_men.jpg);
+        transition: 0.2s ease-out 0.1s;
+    }
+}
+
+.categories_card_kids {
+    background: url(../img/bg_for_kids.jpg) $top-multiply;
+    background-size: cover;
+
+    &:hover {
+        background: url(../img/bg_for_kids.jpg);
+        transition: 0.2s ease-out 0.1s;
+    }
+}
+
+.categories_card_accesories {
+    width: 1140px;
+    height: 180px;
+    background: url(../img/bg_accesories.jpg) $top-multiply;
+    background-size: cover;
+    margin-top: 30px;
+
+    &:hover {
+        background: url(../img/bg_accesories.jpg);
+        transition: 0.2s ease-out 0.1s;
+    }
+}
+
+.categories_rate {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.categories_name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: $main-color;
+}

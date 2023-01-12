@@ -1,0 +1,45 @@
+
+.feature {
+    background: $main-black;
+    color: #fff;
+    padding: 104px 0;
+}
+
+.feature_inside {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    color: $product-bg-color;
+}
+
+.feature_card {
+    width: 360px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 60px 30px 0 30px;
+
+    &:nth-child(1) {
+        background-image: url(/img/feature_1.svg);
+    }
+    &:nth-child(2) {
+        background-image: url(/img/feature_2.svg);
+    }
+    &:nth-child(3) {
+        background-image: url(/img/feature_3.svg);
+    }
+}
+
+.feature_card_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 0 16px 0;
+}
+
+.feature_card_text {
+    font-weight: 300;
+    @include text-size-info;
+}

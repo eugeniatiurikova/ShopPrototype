@@ -1,0 +1,171 @@
+.header {
+    background: $main-black;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    vertical-align: middle;
+    color: #fff;
+    padding: 18px 0;
+
+    &_inside {
+        gap: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_logo {
+        margin-right: 40px;
+    }
+
+    &_title_logo {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+        margin-right: 24px;
+        color: $main-color;
+    }
+
+    &_left,
+    &_right {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &_button {
+        @include noborder-nobg;
+        position: relative;
+        color: #fff;
+        font-size: 28px;
+        line-height: 28px;
+        cursor: pointer;
+
+        &:hover .header_svg {
+            fill: $main-color;
+            transform: scale(1.1);
+            transition: 0.2s ease-out 0.1s;
+        }
+    }
+
+    &_cart {
+        position: relative;
+        padding: 5px 5px 5px 0;
+
+        &_number {
+            position: absolute;
+            top: 0;
+            right: -5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: $main-color;
+            @include text-size-info;
+            color: $main-black;
+        }
+
+    }
+
+    &_svg {
+        fill: #fff;
+        margin: 0 0 0 20px;
+        transition: scale 0.5s ease-out 0.5s;
+
+        &:hover {
+            fill: $main-color;
+            transform: scale(1.1);
+            transition: 0.3s ease-out 0.1s;
+        }
+    }
+
+    &_leftborder {
+        border-left: outset 1px $main-color-opacity;
+    }
+}
+
+
+// Главное меню
+
+.main_menu_cross {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_main_menue {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: $main-shadow;
+    padding: 16px 16px 36px 16px;
+    height: $promo-height;
+    width: 1000px;
+    z-index: 100;
+    top: 64px;
+    left: 26px;
+    opacity: 1;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in 0.2s;
+
+}
+
+.header_main_menue_hidden {
+    transform: translateX(300px) scaleX(0);
+    opacity: 0;
+    transition: all 0.5s ease-in 0.2s;
+}
+
+.main_menu_popup {
+    display: block;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-color;
+    padding-top: 24px;
+    padding-left: 16px;
+}
+
+.main_menu_title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-black;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+.main_menu_items {
+    list-style: none;
+}
+
+.main_menu_link {
+    color: $grey-text-mediumlight;
+}
+
+.main_menu_item {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+}
+
+.mmi_padding {
+    padding-top: 12px;
+    padding-left: 24px;
+}
+
+.main_menu_svg {
+    cursor: pointer;
+    fill: $grey-text;
+    transform: scale(1);
+    transition: 0.2s ease-out 0.2s;
+
+    &:hover {
+        fill: $main-color;
+        transform: scale(1.1);
+        transition: 0.2s ease-out 0.2s;
+    }
+}

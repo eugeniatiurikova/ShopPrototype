@@ -1,0 +1,125 @@
+.product_gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $product-bg-color;
+}
+
+.product_gallery_photo {
+    height: 777px - $product-card_shift;
+    overflow: hidden;
+    padding: 10px 0 0 0;
+    position: relative;
+    margin-bottom: $product-card_shift;
+}
+
+.product_zoom_info {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid $grey-text-ultralight;
+    padding: 64px 249px;
+    margin-top: -$product-card_shift;
+    margin-bottom: 128px;
+}
+
+.product_zoom_category_title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-color;
+    text-transform: uppercase;
+}
+
+.product_zoom_title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $main-black;
+    text-transform: uppercase;
+}
+
+.product_zoom_description {
+    font-weight: 300;
+    @include text-size-info;
+    color: $grey-text;
+    padding: 48px 44px 34px 44px;
+    text-align: center;
+}
+
+.product_zoom_price {
+    text-align: center;
+    width: 642px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $main-color;
+}
+
+.product_zoom_divider {
+    width: 63px;
+    height: 3px;
+    background: $main-color;
+    margin: 13px 0;
+}
+
+.product_zoom_divider_long {
+    width: 641px;
+    height: 1px;
+    background: $grey-text-ultralight;
+    margin: 65px 0 10px 0;
+}
+
+.product_gallery_button {
+    border: none;
+    background: rgba(42, 42, 42, 0.15);
+    padding: 13px 17px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover .product_gallery_arrow {
+        fill: $main-color;
+    }
+}
+
+.product_gallery_arrow {
+    fill: $main-black;
+}
+
+.product_card_svg {
+    fill: $main-color;
+}
+
+.product_zoom_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #fff;
+    color: $main-color;
+    border: 1px solid $main-color;
+    margin-top: 8px;
+    transform: scale(1);
+    transition: 0.3s ease-out 0.1s;
+
+    &:hover .product_card_svg {
+        fill: #fff;
+        transition: 0.3s ease-out 0.1s;
+    }
+
+    &:hover {
+        background-color: $main-color;
+        color: #fff;
+        transform: scale(1.1);
+        transition: 0.3s ease-out 0.1s;
+    }
+
+}

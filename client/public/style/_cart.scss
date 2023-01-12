@@ -1,0 +1,209 @@
+.cart_inside {
+    display: flex;
+    padding: 96px 0 128px 0;
+}
+
+.cart_cards {
+    list-style: none;
+}
+
+.cart_cards_wrap {
+    padding-right: 128px;
+    justify-content: space-between;
+}
+
+.cart_buttons_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.cart_item {
+    width: 652px;
+    display: flex;
+    position: relative;
+    background: #fff;
+    box-shadow: $main-shadow;
+    margin-bottom: 40px;
+}
+
+.cart_item_clear {
+    width: 652px;
+    display: flex;
+    position: relative;
+    background: #fff;
+    margin-bottom: -40px;
+}
+
+.cart_item_quantity {
+    width: 50px;
+    text-align: center;
+    border: 1px solid $grey-text-light;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 4px;
+    margin-left: 10px;
+    color: $grey-text;
+}
+
+.cart_image {
+    width: 262px;
+    height: 306px;
+}
+
+.cart_item_info {
+    padding: 28px 30px 30px 30px;
+}
+
+.cart_svg {
+    position: absolute;
+    border: none;
+    background: transparent;
+    top: 29px;
+    right: 22px;
+    cursor: pointer;
+    fill: $grey-text;
+    transform: scale(1);
+    transition: 0.2s ease-out 0.2s;
+
+    &:hover {
+        fill: $main-color;
+        transform: scale(1.1);
+        transition: 0.2s ease-out 0.2s;
+    }
+}
+
+.cart_item_title {
+    padding-bottom: 45px;
+    padding-right: 15px;
+    // width: 262px;
+    font-size: 24px;
+    line-height: 29px;
+    color: $main-black;
+    text-transform: uppercase;
+}
+
+.cart_item_descript {
+    font-size: 22px;
+    line-height: 36px;
+    color: $grey-text;
+}
+
+
+.cart_button {
+    cursor: pointer;
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+    border: 1px solid $grey-text-light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-black;
+    text-transform: uppercase;
+    transform: scale(1);
+    transition: 0.3s ease-out 0.1s;
+
+    &:hover {
+        background-color: $main-color;
+        border-color: $main-color;
+        color: #fff;
+        transform: scale(1.1);
+        transition: 0.3s ease-out 0.1s;
+    }
+}
+
+.cart_form {
+    padding-top: 20px;
+    width: 360px;
+}
+
+.cart_form_input {
+    width: 360px;
+    margin-bottom: 20px;
+    border: 1px solid $grey-text-light;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 15px;
+}
+
+.cart_button_quote {
+    cursor: pointer;
+    width: 115px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    background-color: #FFFFFF;
+    border: 1px solid $grey-text-light;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: $grey-text-mediumlight;
+    text-transform: uppercase;
+    transform: scale(1);
+    transition: 0.3s ease-out 0.1s;
+
+    &:hover {
+        background-color: $main-color;
+        border-color: $main-color;
+        color: #fff;
+        transform: scale(1.1);
+        transition: 0.3s ease-out 0.1s;
+    }
+}
+
+.cart_form_title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-black;
+    padding-bottom: 22px;
+}
+
+.cart_form_checkout {
+    background: $inner-color-opacity;
+    margin-top: 57px;
+    padding: 43px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.form_sub_total {
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    font-size: 11px;
+    line-height: 13px;
+    color: $grey-text;
+}
+
+.cart_prices {
+    border-bottom: 1px solid $grey-text-light;
+    color: transparent;
+    margin-bottom: 17px;
+}
+
+.chekout_price {
+    padding-left: 22px;
+}
+
+.cart_button_checkout {
+    cursor: pointer;
+    width: 273px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    background-color: $main-color;
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-transform: uppercase;
+    transform: scale(1);
+    transition: 0.3s ease-out 0.1s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.3s ease-out 0.1s;
+    }
+}

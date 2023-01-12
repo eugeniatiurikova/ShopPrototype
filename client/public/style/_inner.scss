@@ -1,0 +1,194 @@
+// Inner page top
+
+.inner_page_top {
+    height: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner_page_title {
+    font-size: 24px;
+    font-weight: normal;    
+    line-height: 29px;
+    text-transform: uppercase;
+    color: $main-color;
+}
+
+.status_string {
+    font-weight: 300;
+    @include text-size-info;
+    color: $grey-text;
+    text-transform: uppercase;
+}
+
+.status_last {
+    font-weight: bold;
+    color: $main-color;
+}
+
+// Filter
+
+.service_nav_inside {
+    padding: 55px 0 40px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase; 
+    position: relative;
+}
+
+.service_filter_category {
+    padding: 0 13px 0 13px;
+    width: 360px;
+    z-index: 100;
+}
+
+.service_filter_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: $main-shadow;
+    margin-top: 39px;
+    padding: 45px 16px 0 16px;
+    width: 360px;
+    z-index: 100;
+}
+
+.service_filter_item_title {
+    @include text-size-info;
+    cursor: pointer;
+    padding: 11px;
+    margin-bottom: 16px;
+    margin-top: 3px;
+    color: $main-color;
+    border-left: outset 5px $main-color;
+    border-bottom: 1px solid $grey-text-ultralight;
+}
+
+.service_filter_item {
+    margin-bottom: 18px;
+    background: #fff;
+}
+
+.sfi_padding {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+}
+
+.service_filter_title_up {
+    color: $main-black;
+    fill: $main-black;
+    font-weight: 600;
+    @include text-size-info;
+    position: absolute;
+    top: 55px;
+    font-weight: 600;
+    padding: 0 0 13px 2px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.service_filter_title_text {
+    margin-right: 10px;
+}
+
+.service_filter_category[open] .service_filter_title_up {
+    color: $main-color;
+    fill: $main-color;
+}
+
+.service_filter_button_wrap {
+    position: relative;
+}
+
+.sf_margin_left {
+    margin-left: 30px;
+}
+
+.service_filter {
+    font-weight: normal;
+    @include text-size-info;
+    @include noborder-nobg;
+    text-transform: uppercase;
+    color: $grey-text;
+    cursor: pointer;
+    position: relative;
+    margin-left: 30px;
+}
+
+.service_filter_button_popup {
+    text-align: left;
+    position: absolute;
+    left: -9px;
+    margin-top: 5px;
+    box-shadow: $main-shadow;
+    background: #fff;
+    min-width: 79px;
+    padding: 9px 12px 9px 9px;
+    z-index: 100;
+}
+
+.sfip_padding {
+    padding-bottom: 6px;
+    white-space: nowrap;
+}
+
+.service_filter_check {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid $grey-text-ultralight;
+}
+
+.service_centered {
+    justify-content: center;
+}
+
+.service_arrow_margin {
+    margin-left: 10px;
+}
+
+// Pagination
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.pagination-item {
+    margin: 0 10px 0 10px;
+}
+
+.pagination-list {
+	list-style: none;
+	display: flex;
+	border: 1px solid $grey-text-ultralight;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.pagination-item-separator {
+	margin: 0 -10px;
+}
+
+.pagination-link {
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $grey-text-light;
+    @include noborder-nobg;
+}
+
+.pagination_arrow {
+    color: $main-black;
+}
+
+.pagination-link-active {
+	color: $main-color;
+    @include noborder-nobg;
+}

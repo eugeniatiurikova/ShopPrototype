@@ -1,0 +1,132 @@
+// Feedback
+
+.feedback {
+    background: url(/img/subscribe_bg.jpg) rgba(244, 244, 244, 0.5);
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-color: $grey-text-light;
+}
+
+.feedback_inside {
+    padding: 97px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.feedback_reference {
+    text-align: center;
+    width: 360px;
+}
+
+.reference_text {
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $main-black;
+}
+
+.subscribe_title {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: $main-black;
+    padding-bottom: 20px;
+}
+
+.subscribe_title_small {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.feedback_form_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback_form {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.feedback_input {
+    padding: 18px;
+    border: none;
+    font-weight: normal;
+    @include text-size-info;
+}
+
+.feedback_email {
+    width: 245px;
+    background: $grey-text-ultralight;
+    // border-radius: 23px 0 0 23px;
+    color: $main-black;
+    opacity: 0.67;
+}
+
+.feedback_subscribe {
+    background: $main-color;
+    // border-radius: 0 23px 23px 0;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+// Footer
+
+.footer {
+    background: $main-black;
+    color: #fff;
+    padding: 23px 0;
+}
+
+.footer_copyright {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer_inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_socials {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: #fff;
+    color: $main-black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    transform: scale(1);
+    transform: rotate(0deg);
+    transition: 0.5s ease-out 0.2s;
+
+    &:hover {
+        background-color: $main-color;
+        color: #fff;
+        transform: scale(1.1);
+        transform: rotate(180deg);
+        transition: 0.5s ease-out 0.2s;
+    }
+}
