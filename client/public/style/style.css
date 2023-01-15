@@ -607,19 +607,12 @@ summary::-webkit-details-marker {
   background-position: center top;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 60px 30px 0 30px;
+  padding: 0 30px 0 30px;
 }
 
-.feature_card:nth-child(1) {
-  background-image: url(/img/feature_1.svg);
-}
-
-.feature_card:nth-child(2) {
-  background-image: url(/img/feature_2.svg);
-}
-
-.feature_card:nth-child(3) {
-  background-image: url(/img/feature_3.svg);
+.feature_image {
+  padding: 0 0 30px 0;
+  fill: #d2bb6f;
 }
 
 .feature_card_title {

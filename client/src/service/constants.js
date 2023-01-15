@@ -1,4 +1,3 @@
-// export const DB_ADDRESS = "http://f0762515.xsph.ru";
 export const DB_ADDRESS = "http://localhost:8088";
 
 export const DB_HEADERS = {
@@ -56,7 +55,7 @@ export const FILTERS = [
 ]
 
 export const FEATURES = [
-    { name: 'Free Delivery', text: 'Worldwide delivery on all. Authorit tively morph next-generation innovtionwith extensive models.' },
-    { name: 'Sales & discounts', text: 'Worldwide delivery on all. Authorit tively morph next-generation innovtionwith extensive models.' },
-    { name: 'Quality assurance', text: 'Worldwide delivery on all. Authorit tively morph next-generation innovtionwith extensive models.' },
+    { id: 'Delivery', title: 'Free Delivery', text: 'Worldwide delivery on all. Authorit tively morph next-generation innovtionwith extensive models.' },
+    { id: 'Sales', title: 'Sales & discounts', text: 'Worldwide delivery on all. Authorit tively morph next-generation innovtionwith extensive models.' },
+    { id: 'Assurance', title: 'Quality assurance', text: 'Worldwide delivery on all. Authorit tively morph next-generation innovtionwith extensive models.' },
 ]

@@ -39,7 +39,8 @@ export const Header = () => {
                         {(cart?.length > 0) && <div className="header_cart_number">{cart.length}</div>}
                     </NavLink>
                     <nav className={`header_main_menue${openMenu ? '' : ' header_main_menue_hidden'}`}><MainMenu /></nav>
-                    <div className={`cart_popup_wrap${openCart ? '' : ' cart_popup_hidden'}`}><CartPopup /></div>
+                    {(cart?.length > 0) &&
+                        <div className={`cart_popup_wrap${openCart ? '' : ' cart_popup_hidden'}`}><CartPopup /></div>}
                 </nav>
             </div>
 
