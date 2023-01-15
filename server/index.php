@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Headers: *");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: *");
 include_once 'ProdService.php';
 include_once 'CartService.php';
 
@@ -13,8 +16,16 @@ if (isset($_GET['action'])) {
         $prodId = null;
         if ($data) $prodId = $data->id;
 
-        switch ($_GET['action']) {
+// add - add 1 product with id to cart
+// cnt - count of product with id in cart
+// del - delete 1 product with id from cart
+// rmv - remove all products with id from cart
+// clr - clear cart
+// all - get all products in the catalog
+// crt - get all products in the cart
+// ttl - get total price of products in the cart
 
+        switch ($_GET['action']) {
             case 'add':
             if ($prodId && ($prodId !== '')) {
                     $newProd = $prodService->getProduct($prodId);

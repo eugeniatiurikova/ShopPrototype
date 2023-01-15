@@ -23,14 +23,14 @@ class CartService
 
     public function addProduct(int $id): void
     {
+        $count = $this->getCount($id);
+        $newcount = $count ? ($count + 1) : 1;
         $statement = $this->pdo->prepare(
-            'INSERT INTO cart (product_id, count)
-                    VALUES (:product_id, :count)
-                    ON CONFLICT (product_id) DO UPDATE SET count = count + 1'
+            'REPLACE INTO cart (product_id, count) VALUES (:product_id, :count)'
         );
         $statement->execute([
             ':product_id' => $id,
-            ':count' => 1
+            ':count' => $newcount
         ]);
     }
 
