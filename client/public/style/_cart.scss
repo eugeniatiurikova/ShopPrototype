@@ -131,7 +131,7 @@
     cursor: pointer;
     width: 115px;
     text-align: center;
-    padding: 15px 0 15px 0;
+    padding: 15px;
     background-color: #FFFFFF;
     border: 1px solid $grey-text-light;
     font-weight: 300;
@@ -184,7 +184,7 @@
 }
 
 .chekout_price {
-    padding-left: 22px;
+    padding-left: 15px;
 }
 
 .cart_button_checkout {
@@ -206,4 +206,59 @@
         transform: scale(1.1);
         transition: 0.3s ease-out 0.1s;
     }
+}
+
+// Popup cart
+
+.cart_popup_wrap {
+    position: absolute;
+    width: 400px;
+    background: white;
+    z-index: 100;
+    opacity: 1;
+    right: 0;
+    top: 45px;
+    padding: 10px 12px 0 12px;
+    box-shadow: $cart-shadow;
+    transition: 0.2s ease-in 0.2s;
+    color: $main-black;
+}
+
+.cart_popup_hidden {
+    transform: translateX(200px) translateY(-100px) scaleX(0) scaleY(0.5);
+    opacity: 0;
+    transition: 0.2s ease-in 0.2s;
+}
+
+table {
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    border-spacing: 10px 0;
+    // white-space: nowrap;
+}
+
+th {
+    color: $main-color;
+    text-align: left;
+    padding: 8px 0;
+    border-bottom: 1px solid $grey-text-ultralight;
+}
+
+td {
+    color: $grey-text;
+    padding: 8px 0;
+    vertical-align: top;
+    border-bottom: 1px solid $grey-text-ultralight;
+}
+
+.cart_popup_buttons_wrap {
+    padding: 20px 10px 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.cart_popup_button {
+    padding-left: 15px;
 }

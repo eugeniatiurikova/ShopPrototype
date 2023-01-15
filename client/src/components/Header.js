@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { LOGO_TEXT } from "../service/constants";
 import { selectCart } from "../store/selectors";
+import { CartPopup } from "./CartPopup";
 import { MainMenu } from "./MainMenu";
 import { SvgBurger } from "./svg/SvgBurger";
 import { SvgCart } from "./svg/SvgCart";
@@ -11,10 +12,15 @@ import { SvgSearch } from "./svg/SvgSearch";
 
 export const Header = () => {
     const cart = useSelector(selectCart);
-    const [open, setOpen] = useState(false);
+    const [openMenu, setOpenMenu] = useState(false);
+    const [openCart, setOpenCart] = useState(false);
 
     const handleClickOpenMenu = () => {
-        setOpen(!open);
+        setOpenMenu(!openMenu);
+    }
+
+    const handleClickOpenCart = () => {
+        setOpenCart(!openCart);
     }
 
     return (
@@ -28,11 +34,12 @@ export const Header = () => {
                 <nav className="header_right">
                     <h2 className="hidden">Navigation panel</h2>
                     <button className="header_button" onClick={handleClickOpenMenu}><SvgBurger /></button>
-                    <NavLink to="/"><SvgPerson /></NavLink>
-                    <NavLink to="/cart" className="header_cart"><SvgCart />
+                    <NavLink to="/" className="header_personal"><SvgPerson /></NavLink>
+                    <NavLink to="/cart" className="header_cart" onMouseEnter={handleClickOpenCart} onMouseLeave={handleClickOpenCart}><SvgCart />
                         {(cart?.length > 0) && <div className="header_cart_number">{cart.length}</div>}
                     </NavLink>
-                    <nav className={`header_main_menue ${open ? '' : 'header_main_menue_hidden'}`}><MainMenu /></nav>
+                    <nav className={`header_main_menue${openMenu ? '' : ' header_main_menue_hidden'}`}><MainMenu /></nav>
+                    <div className={`cart_popup_wrap${openCart ? '' : ' cart_popup_hidden'}`}><CartPopup /></div>
                 </nav>
             </div>
 

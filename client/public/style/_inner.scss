@@ -9,7 +9,7 @@
 
 .inner_page_title {
     font-size: 24px;
-    font-weight: normal;    
+    font-weight: normal;
     line-height: 29px;
     text-transform: uppercase;
     color: $main-color;
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     position: relative;
 }
 
@@ -51,7 +51,7 @@
     background: #fff;
     box-shadow: $main-shadow;
     margin-top: 39px;
-    padding: 45px 16px 0 16px;
+    padding: 45px 16px 30px 16px;
     width: 360px;
     z-index: 100;
 }
@@ -86,7 +86,7 @@
     position: absolute;
     top: 55px;
     font-weight: 600;
-    padding: 0 0 13px 2px;
+    padding: 0;
     cursor: pointer;
     z-index: 200;
 }
@@ -154,9 +154,9 @@
 // Pagination
 
 .pagination {
-	display: flex;
-	justify-content: center;
-	padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .pagination-item {
@@ -164,15 +164,15 @@
 }
 
 .pagination-list {
-	list-style: none;
-	display: flex;
-	border: 1px solid $grey-text-ultralight;
-	border-radius: 5px;
-	padding: 10px;
+    list-style: none;
+    display: flex;
+    border: 1px solid $grey-text-ultralight;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .pagination-item-separator {
-	margin: 0 -10px;
+    margin: 0 5px;
 }
 
 .pagination-link {
@@ -189,6 +189,6 @@
 }
 
 .pagination-link-active {
-	color: $main-color;
+    color: $main-color;
     @include noborder-nobg;
 }

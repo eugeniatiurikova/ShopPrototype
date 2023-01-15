@@ -21,7 +21,7 @@ export const Cards = ({ count, title, subtitle, browse, pagination }) => {
                 })}
             </ul>
             {browse && <div className="center"><NavLink to="/catalog" className="product_link no_line">Browse All Products</NavLink></div>}
-            {pagination && <Pagination />}
+            {pagination && <Pagination visFirst={1} visCount={6} active={1} max={20} />}
         </div>
     </section>)
 }

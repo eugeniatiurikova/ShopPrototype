@@ -25,6 +25,7 @@
         text-transform: uppercase;
         margin-right: 24px;
         color: $main-color;
+        white-space: nowrap;
     }
 
     &_left,
@@ -52,6 +53,8 @@
     &_cart {
         position: relative;
         padding: 5px 5px 5px 0;
+        background: transparent;
+        border: none;
 
         &_number {
             position: absolute;
@@ -93,6 +96,7 @@
 
 .main_menu_cross {
     display: flex;
+    // justify-content: left;
     justify-content: space-between;
 }
 
@@ -100,22 +104,29 @@
     position: absolute;
     background: #FFFFFF;
     box-shadow: $main-shadow;
-    padding: 16px 16px 36px 16px;
-    height: $promo-height;
-    width: 1000px;
+    padding: 16px 0 36px 16px;
+    // height: fit-content;
+    width: fit-content;
+    min-width: 200px;
     z-index: 100;
-    top: 64px;
+    top: 45px;
     left: 26px;
+    // right: 0;
     opacity: 1;
     text-transform: uppercase;
-    transition: all 0.5s ease-in 0.2s;
-
+    transition: all 0.2s ease-in 0.2s;
 }
 
 .header_main_menue_hidden {
-    transform: translateX(300px) scaleX(0);
+    // transform: translateX(300px) scaleX(0);
     opacity: 0;
-    transition: all 0.5s ease-in 0.2s;
+    transition: all 0.2s ease-in 0.2s;
+}
+
+.main_menu_scrollbox {
+    height: fit-content;
+    // overflow-y: scroll;
+    padding: 0 40px 0 0;
 }
 
 .main_menu_popup {
@@ -125,7 +136,7 @@
     font-size: 14px;
     line-height: 17px;
     color: $main-color;
-    padding-top: 24px;
+    padding-top: 20px;
     padding-left: 16px;
 }
 
@@ -134,8 +145,7 @@
     font-size: 14px;
     line-height: 17px;
     color: $main-black;
-    padding-left: 16px;
-    padding-top: 16px;
+    padding: 2px 16px 0 16px;
 }
 
 .main_menu_items {
